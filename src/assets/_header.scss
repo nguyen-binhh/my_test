@@ -1,0 +1,45 @@
+@import 'variables';
+@import 'mixins';
+.header {
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: $background-color;
+  box-shadow: $shadow;
+
+  &__wrapper {
+    @include layout;
+    @include flexbox;
+  }
+
+  .title {
+    flex: 1;
+    padding-left: 10px;
+    font-weight: $font-bold;
+    font-style: $font-italic;
+    font-size: $text-lg;
+    color: $background-primary;
+    cursor: pointer;
+  }
+  .logo {
+    cursor: pointer;
+  }
+
+  .buttons {
+    button {
+      display: inline-block;
+      margin-left: 10px;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border-radius: $border-radius;
+      background-color: $background-primary;
+      color: $text-white;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      transition: opacity 0.2s linear;
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+}

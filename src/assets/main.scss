@@ -1,0 +1,55 @@
+@import 'variables';
+@import 'reset';
+@import 'mixins';
+
+body {
+  font-family: $font;
+}
+
+#app {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $text-primary;
+  max-width: 100%;
+  margin: 0 auto;
+
+  .content {
+    @include layout(0.3rem, 120rem);
+    .heading {
+      font-size: $text-lg;
+      font-weight: $font-bold;
+      color: $text-black;
+      padding: 1rem;
+    }
+
+    &__wrapper {
+      @include flexbox(start, center, wrap, 15px);
+
+      .card {
+        flex: 0 0 calc(100% - 15px);
+        max-width: calc(100% - 15px);
+      }
+
+      @include breakpoint(45em) {
+        .card {
+          flex: 0 0 calc(33.3333% - 15px);
+          max-width: calc(33.3333% - 15px);
+        }
+      }
+
+      @include breakpoint(80em) {
+        .card {
+          flex: 0 0 calc(25% - 15px);
+          max-width: calc(25% - 15px);
+        }
+      }
+
+      @include breakpoint(120em) {
+        .card {
+          flex: 0 0 calc(20% - 15px);
+          max-width: calc(20% - 15px);
+        }
+      }
+    }
+  }
+}

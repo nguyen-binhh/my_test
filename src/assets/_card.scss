@@ -1,0 +1,23 @@
+@import 'variables';
+@import 'mixins';
+.card {
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  .card-image {
+    max-width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+  }
+
+  .card-content {
+    padding: 0.5rem;
+    .card-text {
+      margin: 0;
+      @include truncated();
+    }
+  }
+}
