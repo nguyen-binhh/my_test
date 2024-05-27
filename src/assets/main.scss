@@ -14,12 +14,12 @@ body {
   margin: 0 auto;
 
   .content {
-    @include layout(0.3rem, 120rem);
+    @include layout(1rem, 120rem);
     .heading {
       font-size: $text-lg;
       font-weight: $font-bold;
       color: $text-black;
-      padding: 1rem;
+      padding: 1rem 0;
     }
 
     &__wrapper {

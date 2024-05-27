@@ -28,7 +28,6 @@ export function getPhotoCards(): TypePhotoCard[] {
     { image: 'src/assets/images/landscape.jpg', text: 'Landscape image description.' },
     { image: 'src/assets/images/portrait.png', text: 'Portrait image description.' },
     { image: 'src/assets/images/landscape.jpg', text: 'Landscape image description.' },
-    { image: 'src/assets/images/portrait.png', text: 'Portrait image description.' },
-    { image: 'src/assets/images/landscape.jpg', text: 'Landscape image description.' }
+    { image: 'src/assets/images/portrait.png', text: 'Portrait image description.' }
   ]
 }
